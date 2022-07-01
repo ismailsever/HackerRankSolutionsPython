@@ -1,0 +1,9 @@
+from math import degrees, acos
+AB = int(input())
+BC = int(input())
+if 0 < AB <=100 and 0 < BC <=100:
+    CA = (AB**2 + BC**2)**(1/2)
+    Adj = BC / CA
+    Angle = acos(Adj)
+    degree=chr(176)
+    print(str(round(degrees(Angle))) + degree)
